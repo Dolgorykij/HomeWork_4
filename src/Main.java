@@ -39,11 +39,10 @@ public class Main {
             System.out.println("Если возраст человека равен " + age_1 + " ,то ему нужно ходить на работу");
         }
         System.out.println("задание 5");
-        int childAge = 45;
+        int childAge = 4;
         if (childAge < 5) {
             System.out.println("Если возраст ребенка равен " + childAge + " то ему нельзя кататься на аттракционе");
-        }
-        if (childAge >= 5 && childAge < 14) {
+        } else if (childAge >= 5 && childAge < 14) {
             System.out.println("Если возраст ребенка равен " + childAge + " то ему можно кататься на аттракционе в сопровождении взрослого");
         } else {
             System.out.println("Если возраст ребенка равен " + childAge + " то ему можно кататься на аттракционе без сопровождения взрослого");
@@ -70,7 +69,7 @@ public class Main {
         }
         System.out.println("Задание 7");
         int one = 1;
-        int two = 4;
+        int two = 2;
         int three = 3;
         boolean bigOne = (one > two && one > three);
         boolean bigTwo = (two > one && two > three);
@@ -82,11 +81,12 @@ public class Main {
             System.out.println("Переменная three является наибольшей");
         }
         // пытался сначала вот таким способом сделать, приведенным ниже, но никак не могу понять, почему оно не работает.
+        // исправил на более простую логику, заработало надеюсь
         if (one > two && one > three) {
             System.out.println("Переменная one является наибольшей");
-          } else if (one > three && one < two ) {
+          } else if (two > one && two > three ) {
             System.out.println("Переменная two является наибольшей");
-         } else {
+         } else if (three > one && three > two){
             System.out.println("Переменная three является наибольшей");
         }
 
